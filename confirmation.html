@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audit Confirmé | Ivory Consulting</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        midnight: '#0A1128', 
+                        ivory: '#F4F1EA',    
+                        gold: '#D4AF37',     
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #F4F1EA; }
+    </style>
+</head>
+<body class="bg-ivory text-midnight font-sans antialiased flex flex-col min-h-screen">
+
+    <!-- Header minimaliste -->
+    <header class="py-6 px-4 border-b border-midnight/10 bg-ivory shadow-sm">
+        <div class="max-w-4xl mx-auto text-center">
+            <!-- Remplacement par le logo si disponible, sinon texte -->
+            <div class="text-2xl font-serif font-bold text-midnight tracking-wider uppercase">
+                Ivory<span class="text-gold font-light text-lg tracking-widest ml-1">Consulting</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenu de confirmation -->
+    <main class="flex-grow flex items-center justify-center p-4">
+        <div class="max-w-2xl w-full bg-white p-8 sm:p-12 rounded-3xl border border-midnight/10 shadow-2xl text-center relative overflow-hidden">
+            <!-- Effet décoratif -->
+            <div class="absolute -top-10 -right-10 w-32 h-32 bg-gold/10 rounded-full blur-2xl"></div>
+            
+            <!-- Icône de succès -->
+            <div class="w-20 h-20 mx-auto bg-green-50 border-2 border-green-500 rounded-full flex items-center justify-center mb-6">
+                <svg class="w-10 h-10 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+            </div>
+
+            <h1 class="text-3xl sm:text-4xl font-serif font-bold text-midnight mb-4">Félicitations, votre audit est confirmé !</h1>
+            
+            <p class="text-lg text-midnight/70 mb-8 font-medium">
+                Je viens de recevoir votre demande. Vous allez recevoir un email récapitulatif avec le lien de notre visioconférence (vérifiez vos spams au cas où).
+            </p>
+
+            <div class="bg-ivorydark/30 p-6 rounded-xl border border-midnight/5 text-left mb-8">
+                <h3 class="font-bold text-midnight mb-2">Comment bien préparer notre échange ?</h3>
+                <ul class="text-sm text-midnight/70 space-y-2 list-disc list-inside">
+                    <li>Assurez-vous d'être dans un endroit calme.</li>
+                    <li>Ayez en tête vos objectifs de chiffre d'affaires.</li>
+                    <li>Préparez les accès à votre fiche Google (optionnel mais utile).</li>
+                </ul>
+            </div>
+
+            <a href="https://nadjeguehi.github.io/landing-page-Ivory-Consulting/" class="inline-flex items-center justify-center gap-2 text-gold font-bold hover:text-midnight transition-colors duration-300">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                Retour à l'accueil
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-6 border-t border-midnight/10 text-center bg-ivory">
+        <p class="text-midnight/50 text-xs font-medium">© 2026 Ivory Consulting - L'expertise Neuromanagement en Guadeloupe.</p>
+    </footer>
+
+</body>
+</html>
